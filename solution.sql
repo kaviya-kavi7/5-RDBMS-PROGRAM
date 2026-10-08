@@ -1,16 +1,15 @@
--- ============================================
--- SOLUTION - INSERT STUDENT RECORDS
--- ============================================
-
-USE CollegeDB;
-
--- Insert student records
+create table kaviya_DB;
+use kaviya_DB;
 INSERT INTO Student
-    (StudentID, StudentName, Gender, DepartmentID)
-VALUES
-    (1001, 'Arun', 'Male', 101),
-    (1002, 'Divya', 'Female', 102),
-    (1003, 'Karthik', 'Male', 101);
+(Student_ID, Student_Name, Gender, Department_ID)
+VALUES (1001, 'Arun', 'Male', 101);
 
--- Display all student records
-SELECT * FROM Student;
+INSERT INTO Student
+(Student_ID, Student_Name, Gender, Department_ID)
+VALUES (1002, 'Divya', 'Female', 102);
+
+INSERT INTO Student
+(Student_ID, Student_Name, Gender, Department_ID)
+VALUES (1003, 'Karthick', 'Male', 103);
+
+SELECT * FROM student ;
